@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Prueba Técnica 001</title>
+    </head>
+
+    <body class="container">
+        <h1>Prueba Técnica 001</h1>
+
+        <h2>Se necesitan 3 formularios</h2>
+        <div id="formContainer">
+            <section>
+                <h3>Cargar datos de un usuario: nombre, apellido, teléfono y
+                    fecha de nacimiento.</h3>
+                <form id="userForm" action="/submit" method="POST">
+                    <div>
+                        <label for="POST-name">Nombre:</label>
+                        <input id="POST-name" type="text" name="name"
+                            required />
+                    </div>
+                    <div>
+
+                        <label for="POST-lastname">Apellido:</label>
+                        <input id="POST-lastname" type="text" name="lastname"
+                            required />
+                    </div>
+                    <div>
+                        <label for="POST-phonenumber">Teléfono:</label>
+                        <input id="POST-phonenumber" type="tel"
+                            name="phonenumber"
+                            required />
+                    </div>
+                    <div>
+
+                        <label for="POST-birthdate">Fecha de Nacimiento:</label>
+                        <input id="POST-birthdate" type="date" name="birthdate"
+                            required />
+                    </div>
+
+                    <input type="submit" value="Guardar Usuario" />
+                </form>
+            </section>
+
+            <section>
+                <h3>Cargar un archivo PDF: título y archivo.</h3>
+                <form id="pdfForm" action="/submit" method="POST"
+                    enctype="multipart/form-data">
+                    <div>
+
+                        <label for="POST-title">Título del PDF:</label>
+                        <input id="POST-title" type="text" name="title"
+                            required />
+                    </div>
+                    <div>
+                        <label for="POST-pdf">Archivo PDF:</label>
+                        <input type="file" id="POST-pdf" name="Upload"
+                            required />
+                    </div>
+                    <input type="submit" value="Subir PDF" />
+                </form>
+            </section>
+
+            <section>
+                <h3>Cargar una imagen: título y la imagen.</h3>
+                <form id="imageForm" action="/submit" method="POST"
+                    enctype="multipart/form-data">
+                    <div>
+                        <label for="POST-titleimage">Título de la
+                            Imagen:</label>
+                        <input id="POST-titleimage" type="text"
+                            name="titleimage"
+                            required />
+                    </div>
+                    <div>
+                        <label for="POST-image">Imagen:</label>
+                        <input type="file" id="POST-image" name="UploadImage"
+                            required />
+                    </div>
+
+                    <input type="submit" value="Subir Imagen" />
+                </form>
+            </section>
+        </div>
+        <section>
+                    <h3>2. Se deberá renderizar en pantalla los datos del usuario, el
+                        título y archivo PDF y el título y
+                        la imagen.
+                        Tanto el pdf como la imagen deben tener preview y
+                        descargarse al hacer clic en
+                        ellos.</h3>
+            <div  id="renderContainer">
+                <div id="userDataArea"></div>
+                <div id="pdfDataArea"></div>
+                <div id="imageDataArea"></div>
+            </div>
+        </section>
+
+        <script src="./userData.js"></script>
+        <script src="./pdfData.js"></script>
+        <script src="./imageData.js"></script>
+    </body>
+
+</html>
