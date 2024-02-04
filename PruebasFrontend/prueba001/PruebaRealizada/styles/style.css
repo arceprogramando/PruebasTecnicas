@@ -1,86 +1,107 @@
 /* MI RESET.CSS */
 
 * {
-    min-width: 0;
-    font: inherit;
+  min-width: 0;
+  font: inherit;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img,
 video,
 svg {
-    display: block;
-    height: auto;
-    max-width: 100%
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 
 body {
-    margin: 0;
-    min-height: 100dvh;
+  margin: 0;
+  min-height: 100dvh;
 }
 
-h1, h2, h3, h4, h4 {
-    text-wrap: balance;
+h1,
+h2,
+h3,
+h4,
+h4 {
+  text-wrap: balance;
 }
 
 p {
-    text-wrap: pretty
+  text-wrap: pretty;
 }
 
 /* Fin Mi RESET.CSS */
 
 /* Ejercicios 1 */
 .container {
-    max-width: 80%;
-    margin: auto;
+  max-width: 80%;
+  margin: auto;
 }
 
 h1 {
-    text-align: center;
-    font-size: 2rem;
+  text-align: center;
+  font-size: 2rem;
 }
 
 h2 {
-    font-size: 1.5rem;
-    text-decoration: underline;
-    padding: 1rem;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  padding: 1rem;
 }
 
-#formContainer{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
-    gap: 1rem;
-    
+#formContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-#formContainer h3{
-    max-width: 200px;
+#formContainer h3 {
+  max-width: 200px;
 }
 
-section h3{
-    text-align: center;
+section h3 {
+  text-align: center;
 }
-#formContainer section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-    border: 1px solid red;
-    padding: 1rem;
-}
-
-
-
-#renderContainer{
-    display: flex;
-    justify-content: space-around;
+#formContainer section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  border: 1px solid red;
+  padding: 1rem;
 }
 
-/* Ejercicios 2 */
+#renderContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Carousel */
+
+#carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-image {
+  
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin: 0 10px;
+  transition: transform 1s;
+}
+
+.carousel-image:nth-child(3) {
+  width: 500px;
+  height: 500px;
+}
